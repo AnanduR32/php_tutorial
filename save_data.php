@@ -3,7 +3,7 @@
 	if($conn->connect_error){
 		die("connection failed: ".$conn->connect_eror);
 	}
-	$sql="INSERT INTO register(name,address,gender) VALUES ('$_GET[txtname]','$_GET[txtaddress]','$_GET[gender]')";
+	$sql="INSERT INTO registration(Name,Address,Gender)VALUES('$_GET[txtname]','$_GET[txtaddress]','$_GET[gender]')";
 	if($conn->query($sql)===TRUE){
 		echo "New record created succesfully";
 	}
