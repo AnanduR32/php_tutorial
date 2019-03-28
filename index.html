@@ -12,6 +12,10 @@
  			background-image: linear-gradient(to right, #984447, #468c98);
     		font-family: 'PT Sans', sans-serif;
 		}
+		#central{
+			position: relative;
+			left: ;
+		}
 	</style>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet"> 
 </head>
@@ -21,11 +25,20 @@
 		<div id="tabl">
 			<table border="1" align="center">
 				<!--<tr><td>Enter Admission no. <input type="text" name="txtadm"></td></tr>-->
-				<tr><td>Enter Your User Name <input type="text" name="txtname"></td></tr>
+				<tr><td>Name :<input type="text" name="txtname"></td></tr>
 				<tr><td>Address:<textarea name="txtaddress"></textarea></td></tr>
-				<tr><td>Gender:	<input type="radio" name="gender" value="female">Female
+				<tr><td>Gender:<input type="radio" name="gender" value="female">Female
 				<input type="radio" name="gender" value="Male">Male</td></tr>
-				<tr><td><input type="submit" name="submut" value="Submit"></td></tr>
+				<tr><td>Password<input type="Password" name="Password"></td></tr>
+				<tr><td>Role
+						<select name="Role" id="centeral">
+							<option value="">Choose User Role</option>
+							<option value="2">Student</option>	
+							<option value="1">Teacher</option>			
+						</select>
+					</td>
+				</tr>
+				<tr><td><input type="submit" name="submit" value="Submit"></td></tr>
 			</table>
 		</div>
 	</form>
