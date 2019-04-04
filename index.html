@@ -6,40 +6,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="php learning">
 	<meta name="author" content="Anandu R">
-	<style type="text/css">
-		body {
- 			background: lightblue no-repeat fixed center;
- 			background-image: linear-gradient(to right, #984447, #468c98);
-    		font-family: 'PT Sans', sans-serif;
-		}
-		#central{
-			position: relative;
-			left: ;
-		}
-	</style>
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet"> 
+
 </head>
-<body>
-	<h2 style="position: relative; left: 44%;">REGISTRATION</h2>
-	<form name="frmregister" action="save_data.php" method="get">
+<body style="background-image: hotpink">
+	<center style="margin-top: 250px"><h2>REGISTRATION</h2></center>
+	<form name="registration" action="save_data.php" method="get">
 		<div id="tabl">
-			<table border="1" align="center">
-				<!--<tr><td>Enter Admission no. <input type="text" name="txtadm"></td></tr>-->
+			<center>
+			<div>
+			<table border="1" style="border: 3px; border-color: #20639B; border-style: solid; padding: 3px;">
+				<!--<tr><td>Admission no. :<input type="text" name="txtadm"></td></tr>-->
 				<tr><td>Name :<input type="text" name="txtname"></td></tr>
 				<tr><td>Address:<textarea name="txtaddress"></textarea></td></tr>
-				<tr><td>Gender:<input type="radio" name="gender" value="female">Female
-				<input type="radio" name="gender" value="Male">Male</td></tr>
-				<tr><td>Password<input type="Password" name="Password"></td></tr>
-				<tr><td>Role
-						<select name="Role" id="centeral">
-							<option value="">Choose User Role</option>
-							<option value="2">Student</option>	
-							<option value="1">Teacher</option>			
-						</select>
-					</td>
-				</tr>
+				<tr><td>Email :<input type="text" name="txtmail"></td></tr>
+				<tr><td>DOB :<textarea name="txtdob"></textarea></td></tr>
+				<tr><td>Gender :
+					<input type="radio" name="gender" value="female">Female
+					<input type="radio" name="gender" value="Male">Male
+					<input type="radio" name="gender" value="Others">Others</td></tr>
 				<tr><td><input type="submit" name="submit" value="Submit"></td></tr>
 			</table>
+			</div>
+		</center>
 		</div>
 	</form>
 </body>
